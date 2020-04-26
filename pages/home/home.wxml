@@ -1,0 +1,113 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class="tou">
+    <view style=" font-size: 14px">{{address}}</view>
+    <view style="background-color: red;border-radius: 25px;color: white;font-size: 14px;padding: 2px 0 2px 2px">自取
+      <text bindtap="diz" style="background-color: #a6c393;padding: 2px">外卖</text>
+    </view>
+  </view>
+
+
+  <view class="content">
+  		<view class='left'>
+  			<view class="{{flag==0?'select':'normal'}}" id='0' bindtap='switchNav'>新品推荐</view>
+  			<view class="{{flag==1?'select':'normal'}}" id='1' bindtap='switchNav'>招牌热卖</view>
+  			<view class="{{flag==2?'select':'normal'}}" id='2' bindtap='switchNav'>芝士鲜果</view>
+  			<view class="{{flag==3?'select':'normal'}}" id='3' bindtap='switchNav'>霸气鲜果</view>
+  		</view>
+  		<view class='right'>
+  			<view class='category'>
+  				<swiper current='{{currentTab}}' style='height:550px' vertical="{{true}}">
+  					<swiper-item id='0' catchtouchmove="stopTouchMove">
+            <!-- 轮播 -->
+           <view class="lunb">
+            <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500">
+  <swiper-item wx:for="{{lun}}" wx:key>
+    <image src="{{item.photo}}" mode="aspectFill" style='width:100%;height:120px'></image>
+  </swiper-item>
+</swiper>
+           </view>
+  						<!-- 商品卡片开始 -->
+  						<view class="shop" wx:for='{{lingshi}}' wx:key>
+  							<view>
+  								<image mode="widthFix" class="img" src="{{item.img}}"></image>
+  							</view>
+  							<view class="shop_new">
+  								<view>{{item.new}}</view>
+  								<view class="shop_price">
+  									<view>{{item.price}}</view>
+  									<view data-index="{{index}}" class="jia">
+  								    <van-stepper min="0" value="{{ item.num }}" bind:change="onChange" data-index='{{index}}'/>
+  									</view>
+  								</view>
+  							</view>
+  						</view>
+  						<!-- 商品卡片结束 -->
+  					</swiper-item>
+  					<swiper-item id='1' catchtouchmove="stopTouchMove">
+  						<!-- 商品卡片开始 -->
+  						<view class="shop" wx:for='{{chuangyi}}' wx:key>
+  							<view>
+  								<image mode="widthFix" class="img" src="{{item.img}}"></image>
+  							</view>
+  							<view class="shop_new">
+  								<view>{{item.new}}</view>
+  								<view class="shop_price">
+  									<view>{{item.price}}</view>
+  									<view bindtap="showPopup2" data-index="{{index}}">
+  										{{item.jia}}
+  									</view>
+  								</view>
+  							</view>
+  						</view>
+  						<!-- 商品卡片结束 -->
+  					</swiper-item>
+  					<swiper-item id='2' catchtouchmove="stopTouchMove">
+  						<!-- 商品卡片开始 -->
+  						
+  						<!-- 商品卡片结束 -->
+  					</swiper-item>
+  					<swiper-item id='3' catchtouchmove="stopTouchMove">
+  						<!-- 商品卡片开始 -->
+  						
+  						<!-- 商品卡片结束 -->
+  					</swiper-item>
+  				</swiper>
+  			</view>
+  		</view>
+  	</view>
+
+  	<!-- 底部结算开始 -->
+  	<view class="gm">
+  		<view>
+  			<image bindtap="showPopup1" mode="widthFix" style="width:2rem;height:50px" mode="aspectFit" src="{{bgwc}}"></image>
+  		</view>
+  		<view class="zj">{{zj}}</view>
+  		<view>合计：￥ {{price}}</view>
+  		<view style="width: 50%;">
+  			<button bindtap="tiao" class="btn"><text style="font-size:15px;color:white">点击购买</text></button>
+  		</view>
+  	</view>
+  	<!-- 底部结算结束 -->
+  	<!-- 添加购物车弹出层开始 -->
+  	<!-- 添加购物车弹出层结束 -->
+  	<!-- 购物车弹出层开始 -->
+  	<view>
+  		<van-popup show="{{ show1 }}" position="bottom" custom-style="height: 50%;" bind:close="onClose1">
+  			<view class="cart">
+  				<view class="cart_kz">
+  					<view>购物车</view>
+  					<view bindtap="qk">清空</view>
+  				</view>
+  				<view class="sz" wx:for='{{lingshi}}' wx:if='{{item.num}}' wx:key>
+  					<image style="width:40px;height:40px" src="{{item.img}}"></image>
+  					<view>{{item.new}}</view>
+						<view>{{item.price*item.num}}</view>
+  					<view>
+  						<van-stepper value="{{ item.num }}" min='0' bind:change="onChange" data-index='{{index}}'/>
+  					</view>
+  				</view>
+  			</view>
+  		</van-popup>
+  	</view>
+</view>

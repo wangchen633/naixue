@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+<view class="dian">
+<view class="tui">
+<image class="tu" src="http://img2.imgtn.bdimg.com/it/u=1280790412,3210435920&fm=26&gp=0.jpg"></image>
+</view>
+<view class="zi">
+<view>您还没有点单</view>
+<view>快去犒劳一下自己吧~</view>
+</view>
+<view>
+<button bindtap="shang" style="width: 50%;margin-top: 30px;border-radius: 25px;color: white; background-color: #a6c393">去点餐</button>
+</view>
+<view style="text-align: center;margin-top: 20px;color: #a6c393;font-size: 14px">查看历史订单</view>
+</view>

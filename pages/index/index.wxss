@@ -1,0 +1,68 @@
+/**index.wxss**/
+.hear image{
+height: 170px;
+width: 100%
+}
+page{
+  background-color: lightblue;
+ 
+}
+.cen{
+  width: 90%;
+  margin-left: 5%;
+  background-color: white;
+  height: 100px;
+ position: absolute;
+ margin-top: -30px;
+ display: flex;
+ justify-content: space-around;
+ font-size: 14px
+}
+.cen image{
+  width: 150%;
+  height: 100rpx;
+  
+}
+.jifen{
+margin-top: 80px;
+width: 90%;
+margin-left: 5%;
+background-color: white;
+font-size: 12px;
+display: flex;
+justify-content: space-around;
+
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  text-align: center
+}
+.shang{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px
+}
+.shang image{
+  width: 100%;
+  height: 120px;
+
+}
+.bot{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px
+}
+.bot image{
+  width: 100%;
+  height: 120px
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "我的地址",
+  "navigationBarTextStyle": "black"
+}

@@ -1,0 +1,25 @@
+<!--pages/xinw/xinw.wxml-->
+<view>
+<view style="margin-left:10px">初夏的信号：杨枝甘露宝藏茶</view>
+<view class="shi">奈雪的茶
+<text>一周前</text>
+</view>
+<view>
+<image style="height: 200px;width: 100%" src="http://m.qpic.cn/psc?/V14P7yu60zfY6s/EhPRALW.5z3GNhe6Xfm9kgR8tiIvOmzkbAmMXtvP7BGmy.oc7KNjXIM8YS8vS2dgwcANZwl1njGgDN6J.1SXCA!!/mnull&bo=.AHbAQAAAAADBwE!&rf=photolist&t=5"></image>
+</view>
+<view class="rong">
+<view>最具融媒素养个人 </view>
+<view>企业品牌营销创意奖  </view>
+<view>	2019中国茶饮十大品牌 </view>
+<view>	2019年最值得关注的女性创业者 </view>
+</view>
+<view style="width:90%;margin-left:5%;margin-top:50px">
+<image style="width:100%;height:170px" src="http://m.qpic.cn/psc?/V14P7yu60zfY6s/EhPRALW.5z3GNhe6Xfm9koX0zP4SEqF1UCBVIMa7VZF7GjJzoaBJmpJ8btOs9VW5u85Al9XVEft1S5ky1IZJsQ!!/mnull&bo=0wGoAAAAAAADB1g!&rf=photolist&t=5"></image>
+</view>
+<view class="rong">
+<view>最具融媒素养个人 </view>
+<view>企业品牌营销创意奖  </view>
+<view>	2019中国茶饮十大品牌 </view>
+<view>	2019年最值得关注的女性创业者 </view>
+</view>
+</view>

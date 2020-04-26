@@ -1,0 +1,10 @@
+/* pages/add/add.wxss */
+.an{
+  position: fixed;
+  bottom: 5px;
+  width: 100%
+}
+.adds{
+  margin-left: 20px;
+   
+}

@@ -1,0 +1,30 @@
+<!--pages/xin/xin.wxml-->
+<view class="cu-form-group">
+
+  <van-cell-group>
+    <van-field value="{{ username }}" clearable label="收货人" placeholder="请输入收货人" bind:blur="onClickIcon" />
+  </van-cell-group>
+  <!-- 性别 -->
+  <view class="xing">
+    <view style="font-size:14px;padding-right: 6%">性别</view>
+    <!-- <view value="{{ radio }}" bind:change="onChange" class="xuan"> -->
+      <view class="button">
+        <van-button size="mini" type="default" color='{{col}}'bind:click='xian'>先生</van-button>
+      </view>
+      <view>
+        <van-button size="mini" type="default" color='{{coln}}' bind:click='nv'>女士</van-button>
+      </view>
+      <!-- <text wx:for='{{xingb}}' wx:key style="background-color: {{item.bacol}}; color: {{item.yan}}" data-index="{{index}}" bindtap="dian" name='{{item.su}}' >{{item.name}}</text> -->
+    <!-- </view> -->
+  </view>
+  <van-cell-group>
+    <van-field value="{{ tel }}" clearable label="联系方式" placeholder="请输入收货人联系方式" bind:blur="ontel" />
+  </van-cell-group>
+  <van-cell-group>
+    <van-field value="{{ address }}" clearable label="收货地址" placeholder="请点击选择收获地址" bind:blur="onadd" bind:focus='di'/>
+  </van-cell-group>
+  <van-cell-group>
+    <van-field value="{{ men }}" clearable label="门牌号" placeholder="请输入收货人详细地址" bind:blur="onmen" />
+  </van-cell-group>
+  <button bindtap="baoc" style=" width: 80%;background-color: #a6c393;  border-radius: 25px;margin-top: 50px">保存地址</button>
+  </view>

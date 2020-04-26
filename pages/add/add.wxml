@@ -1,0 +1,13 @@
+<!--pages/add/add.wxml-->
+<view>
+<view class="adds">
+<text style="font-size:18px">{{dizhi}}</text>
+<view>
+<text>{{xingm}}</text>
+<text style="margin-left:10px">{{dianh}}</text>
+</view>
+</view>
+<view class="an">
+<button bindtap="xin"  style=" width: 80%;background-color: #a6c393;  border-radius: 25px;color:white">新增地址</button>
+</view>
+</view>

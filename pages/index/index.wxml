@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<view>
+  <view class="hear">
+    <!-- 轮播 -->
+    <image src="http://m.qpic.cn/psc?/V14P7yu60zfY6s/EhPRALW.5z3GNhe6Xfm9kg.SeWhsfc1fA2ZSCthwd0u8wel8kufIXTiEHbkYDh11fMnIkwOuIQaY1mhaOl.XLQ!!/mnull&bo=aAepAwAAAAADB.c!&rf=photolist&t=5">
+    </image>
+    <view class="cen">
+      <!-- 外卖 -->
+      <view style="margin-top: 10px" bindtap="shang">
+        <image class="tu" src="/image/zq.png">
+        </image>
+        <text style="padding-left: 20px">自取</text>
+      </view>
+      <view style="margin-top: 15px; border-right: 1px solid black;margin-bottom: 15px; border-color: #a6c393"></view>
+      <view style="margin-top: 10px;padding-right: 20px" bindtap="waim">
+        <image class="tu" src="/image/wm.png">
+        </image>
+        <text>外卖</text>
+      </view>
+    </view>
+  </view>
+  <view class="jifen">
+    <view style="padding: 10px">
+      我的积分
+      <text style="fonfont-size: 20px">0</text>
+
+      <view>进入积分商城兑换奈雪劵及周边好礼＞</view>
+    </view>
+    <van-button style="margin-top:20px;color: #a6c393;padding-right: 10px" type="primary" bindtap="onClickShow">会员码</van-button>
+    <van-overlay show="{{ show }}" bind:click="onClickHide">
+      <view class="wrapper">
+        <view class="block" catch:tap="noop">
+            <view style="  font-size: 16px;margin-top: 20px;margin-bottom:10px">到店消费出示可累计积分</view>
+            <image style="width: 100px;height: 100px;margin-bottom:10px" src="http://m.qpic.cn/psc?/V14P7yu60zfY6s/EhPRALW.5z3GNhe6Xfm9kssCaFpNIDA2B1bRcUZA5QJGGfxhbf0WvrGmuQLASJrozCCib01QZm338T.ohdmOIg!!/mnull&bo=ewB8AAAAAAADByU!&rf=photolist&t=5"></image>
+        <view><text>会员码每30秒自动更新</text></view>
+        </view>
+      </view>
+    </van-overlay>
+  </view>
+
+
+<view class="shang">
+<image src="http://m.qpic.cn/psc?/V14P7yu60zfY6s/EhPRALW.5z3GNhe6Xfm9kookPmXeiz2iDoN3QlDgb.FEY.o5XP6P15Gb7BucvubNSH1F1YmxOzANMLvAs5.e9Q!!/mnull&bo=zwG6AAAAAAADB1Y!&rf=photolist&t=5"></image>
+</view>
+
+
+<view style=" font-size: 20px;width: 90%; margin-left: 5%; margin-top: 10px">
+会员新鲜事
+</view>
+
+<view class="bot" bindtap="xinw">
+<image src="http://m.qpic.cn/psc?/V14P7yu60zfY6s/EhPRALW.5z3GNhe6Xfm9koX0zP4SEqF1UCBVIMa7VZF7GjJzoaBJmpJ8btOs9VW5u85Al9XVEft1S5ky1IZJsQ!!/mnull&bo=0wGoAAAAAAADB1g!&rf=photolist&t=5"></image>
+</view>
+<view class="bot">
+<image src="http://m.qpic.cn/psc?/V14P7yu60zfY6s/EhPRALW.5z3GNhe6Xfm9kvNAwUdLj8GTFL0sFQPOlNS0S6Oq6OwuP*nZyzEufyo8QOqBowdtzzF*BEfoZ6DtmA!!/mnull&bo=0wGqAAAAAAADB1o!&rf=photolist&t=5"></image>
+</view>
+</view>

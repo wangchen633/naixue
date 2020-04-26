@@ -1,0 +1,13 @@
+.tu{
+  width: 100px;
+  height: 100px
+}
+.tui{
+  margin-top: 120px;
+  text-align: center
+}
+.zi{
+  margin-top: 20px;
+  text-align: center;
+
+}

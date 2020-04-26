@@ -1,0 +1,19 @@
+/* pages/xinw/xinw.wxss */
+.shi{
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: lightseagreen
+}
+.shi text{
+  margin-left: 10px;
+  color: black;
+  
+}
+.rong{
+  margin-top: 30px;
+  text-align: center
+}
+.rong view{
+  padding-top: 5px
+}

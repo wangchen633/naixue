@@ -1,0 +1,61 @@
+/* pages/new/new.wxss */
+.bei image{
+  height: 150px;
+  width: 100%
+}
+page{
+  background-color: aliceblue
+}
+.cu-avatar{
+  width: 65px;
+  height: 65px
+}
+.toux{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+
+}
+.tou{
+  width: 90%;
+  margin-left: 5%;
+  background-color: white;
+  position: absolute;
+  margin-top: -50px
+}
+.ming{
+  padding-left: 20px
+}
+.tx{
+  padding-left: 20px;
+  margin-top: -30px;
+  width: 4rem;
+  height: 3rem
+}
+.ming{
+  width: 80px
+}
+.yu{
+  display: flex;
+  justify-content: space-around;
+ padding: 20px 0
+}
+.remai{
+  margin-top: 90px;
+  width: 90%;
+  margin-left: 5%
+}
+.remai image{
+  width: 100%;
+  height: 80px
+}
+.di{
+  background-color: white;
+  margin-top: 10px;
+  
+}
+.diz{
+  padding: 20px 0;
+  text-align: center;
+  font-size: 12px
+}

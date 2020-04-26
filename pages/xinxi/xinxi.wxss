@@ -1,0 +1,25 @@
+/* pages/xinxi/xinxi.wxss */
+.xing{
+  display: flex;
+ margin-left: 20px;
+ width: 100%;
+ /* color: blue */
+}
+/* .button{
+  width: 20%
+} */
+.xing button{
+  width: 100%;
+  margin-left: 76%;
+
+}
+.xuan{
+  flex-direction:row
+}
+.xuan text{
+  padding: 5px
+}
+.xuan{
+  margin-left: 50px;
+ 
+}
